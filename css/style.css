@@ -1,36 +1,11 @@
-[href="./index.html"] {
-    color: #2196F3;
-}
-[href="mailto:info@devstudio.com"]{
-    color: #2196F3;
-}
-[href="./pages1/portfolio.html"]{
-    color: #212121;
-}
-[href="tel:+380961111111"] {
-color:#757575;
-;
-}
-h1 {
-    color:  #FFFFFF;
+:root{
+    --accent-color: #2196F3
+    --logo-color: #000000
+    --text-color: #212121
+    --addtext-color: #757575
+    --title-color:#FFFFFF
+    --footer-number:rgba(255, 255, 255, 0.6)
+    --footer-background: #2F303A
+    --team-background: #F5F4FA
 
-}
-[type="button"]{
-    color:#FFFFFF;
-    ;
-}
-[type="button"] {
-    background-color: #2196F3;
-}
-h2 {
-    color:#212121;
-    ;
-}
-h3 {
-    color:#212121;
-    ;
-}
-p {
-    color:#757575;
-    ;
 }
