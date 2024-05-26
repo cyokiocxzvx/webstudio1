@@ -8,6 +8,15 @@
     --footer-background: #2F303A;
     --team-background: #F5F4FA;
 }
+.header {
+    background: #FFF;
+}
+.main {
+    background: #FFF;
+}
+.footer {
+    background: #2F303A;
+}
 .header-logo {
     color: var(--logo-color);
 font-family: "Raleway";
@@ -116,9 +125,6 @@ font-weight: 400;
 line-height: 1.18;
 letter-spacing: 0.48px;
 }
-.footer {
-    background-color: #2F303A;
-}
 .footer-logo {
     color: var(--logo-color);
 font-family: "Raleway";
@@ -126,15 +132,14 @@ font-size: 26px;
 font-weight: 700;
 line-height: 1.38;
 letter-spacing: 0.78px;
-background-color: #2F303A;
 }
 .logo-color {
-    color: var(--title-color);
-font-family: "Raleway";
-font-size: 26px;
-font-weight: 700;
-line-height: 1.38;
-letter-spacing: 0.78px;
+    color: var(--accent-color);
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
 }
 .address-link {
     color: var(--title-color);
@@ -143,7 +148,6 @@ font-size: 14px;
 font-weight: 400;
 line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
-background-color: #2F303A;
 }
 .footer-link {
     color: var(--footer-number)
@@ -153,15 +157,3 @@ font-weight: 400;
 line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
