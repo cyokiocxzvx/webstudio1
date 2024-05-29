@@ -4,9 +4,9 @@
     --text-color: #212121;
     --addtext-color: #757575;
     --title-color:#FFF;
-    --footer-number: rgba(255, 255, 255, 0.6);
     --footer-background: #2F303A;
     --team-background: #F5F4FA;
+    --footer-humber: rgba(255, 255, 255, 0.6);
 }
 .header {
     background: #FFF;
@@ -94,7 +94,7 @@ letter-spacing: 0.48px;
         letter-spacing: 0.78px;
 }
 .address-link {
-    color: var(--title-color);
+    color: var(--footer-humber);
 font-family: "Roboto";
 font-size: 14px;
 font-weight: 400;
@@ -102,7 +102,7 @@ line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
 }
 .footer-link {
-    color: var(--footer-number)
+    color: var(--footer-humber);
 font-family: "Roboto";
 font-size: 14px;
 font-weight: 400;
