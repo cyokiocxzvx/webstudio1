@@ -134,7 +134,7 @@ line-height: 1.38;
 letter-spacing: 0.78px;
 }
 .logo-color {
-    color: var(--accent-color);
+    color: var(--title-color);
     font-family: "Raleway";
     font-size: 26px;
     font-weight: 700;
