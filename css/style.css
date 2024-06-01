@@ -33,6 +33,9 @@ letter-spacing: 0.78px;
     line-height: 1.38;
     letter-spacing: 0.78px;
 }
+.nav-link:hover {
+    color: var(--accent-color);
+}
 .nav-link {
     color: var(--text-color);
 font-family: "Roboto";
@@ -40,6 +43,9 @@ font-size: 14px;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.28px;
+}
+.header-link:hover {
+    color: var(--accent-color);
 }
 .header-link {
     color: var(--addtext-color);
@@ -126,7 +132,7 @@ line-height: 1.18;
 letter-spacing: 0.48px;
 }
 .footer-logo {
-    color: var(--logo-color);
+    color: var(--title-color);
 font-family: "Raleway";
 font-size: 26px;
 font-weight: 700;
@@ -134,7 +140,7 @@ line-height: 1.38;
 letter-spacing: 0.78px;
 }
 .logo-color {
-    color: var(--title-color);
+    color: var(--accent-color);
     font-family: "Raleway";
     font-size: 26px;
     font-weight: 700;
