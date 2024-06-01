@@ -6,3 +6,16 @@ ul {
     padding: 0;
     list-style: none;
 }
+body {
+    margin: 0;
+}
+h1, h2, p {
+    margin: 0;
+    margin-left: 0;
+}
+img {
+    display: block;
+}
+.team-desk {
+    margin: 0;
+}
