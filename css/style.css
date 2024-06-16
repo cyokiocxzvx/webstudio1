@@ -209,6 +209,8 @@ letter-spacing: 0.48px;
 .footer {
     padding-bottom: 60px;
     padding-top: 60px;
+    padding-right: 1154px;
+    padding-left: 215px;
 }
 .footer-logo {
     color: var(--title-color);
