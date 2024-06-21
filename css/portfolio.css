@@ -10,6 +10,15 @@
 }
 .header {
     background: #FFF;
+    display: flex;
+    gap: 50px;
+padding-right: 215px;
+padding-left: 215px;
+padding-bottom: 32px;
+padding-top: 32px;
+margin-bottom: 197px;
+}
+.weqwe {
 }
     .header-logo {
         color: var(--logo-color);
@@ -27,6 +36,11 @@
         line-height: 1.38;
         letter-spacing: 0.78px;
 }
+.nav-list {
+    display: flex;
+    gap: 50px;
+    padding-right: 344px;
+}
 .nav-link:hover{
     color: var(--accent-color);
     bac
@@ -38,6 +52,10 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+}
+.header-list {
+    display: flex;
+    gap: 50px;
 }
 .header-link:hover {
     color: var(--accent-color);
@@ -52,6 +70,13 @@ letter-spacing: 0.28px;
 }
 .main {
     background: #FFF;
+}
+.button-list {
+    display: flex;
+    gap: 8px;
+    margin-left: 442px;
+    margin-right: 583px;
+    margin-bottom: 50px;
 }
 .button-btn:hover {
     color: var(--title-color);
@@ -70,6 +95,20 @@ font-weight: 500;
 line-height: 1.62; /* 162.5% */
 letter-spacing: 0.48px;
 }
+.portfolio-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.portfolio-item {
+    width: 370px;
+    height: 404px;
+}
+.portfolio-img {
+    width: 370px;
+    padding-bottom: 20px;
+}
 .portfolio-title {
     color: var(--text-color);
 font-family: "Roboto";
@@ -77,6 +116,7 @@ font-size: 18px;
 font-weight: 700;
 line-height: 2; /* 200% */
 letter-spacing: 1.08px;
+
 }
 .portfolio-text {
     color: var(--addtext-color);
@@ -87,23 +127,28 @@ line-height: 1.87; /* 187.5% */
 letter-spacing: 0.48px;
 }
 .footer {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    padding-right: 1154px;
+    padding-left: 215px;
     background: #2F303A;
 }
 .footer-logo {
-        color: var(--title-color);
+    color: var(--title-color);
+font-family: "Raleway";
+font-size: 26px;
+font-weight: 700;
+line-height: 1.38;
+letter-spacing: 0.78px;
+
+}
+.logo-color {
+    color: var(--accent-color);
     font-family: "Raleway";
     font-size: 26px;
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
-    }
-.logo-color {
-        color: var(--accent-color);
-        font-family: "Raleway";
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 1.38;
-        letter-spacing: 0.78px;
 }
 .address-link {
     color: var(--title-color);
@@ -121,6 +166,3 @@ font-weight: 400;
 line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
 }
-
-
-
