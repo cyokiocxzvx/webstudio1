@@ -8,7 +8,12 @@
     --team-background: #F5F4FA;
     --footer-humber: rgba(255, 255, 255, 0.6);
 }
-
+.container {
+    width: 1640px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
 .header {
     background: #FFF;
     display: flex;
@@ -19,9 +24,6 @@
     padding-top: 32px;
     margin-bottom: 197px;
 }
-
-.weqwe {}
-
 .header-logo {
     color: var(--logo-color);
     font-family: "Raleway";
