@@ -2,15 +2,22 @@
     --accent-color: #2196F3;
     --logo-color: #000000;
     --text-color: #212121;
-    --addtext-color: #757575;
+    --add-text-color: #757575;
     --title-color: #FFF;
     --footer-background: #2F303A;
     --team-background: #F5F4FA;
     --footer-humber: rgba(255, 255, 255, 0.6);
 }
-
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto";
+}
 .header {
     background: #FFF;
+    padding-bottom: 25px;
+    padding-top: 24px;
 }
 
 .main {
@@ -21,14 +28,15 @@
     background: #2F303A;
 }
 .container {
-    width: 1600px;
-    padding-left: 10px;
-    padding-right:10px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right:15px;
     margin: 0 auto;
+    outline: 1px solid red;
 }
 .header > .container  {
     display: flex;
-    height: 80px;
+    align-items: center;
 }
 
 .header-logo {
@@ -38,9 +46,7 @@
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
-padding-left: 215px;
-padding-top: 24px;
-padding-bottom: 25px;
+    margin-right: 93px;
 }
 
 .header-color {
@@ -50,7 +56,6 @@ padding-bottom: 25px;
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
-    gap: 94px;
 
 }
 
@@ -60,18 +65,12 @@ padding-bottom: 25px;
 .nav-list {
 display: flex;
     gap: 50px;
-    padding-right: 344px;
-    padding-left: 93px;
-    padding-bottom: 32px;
-    padding-top: 32px;
 }
 
 .header-list {
     display: flex;
     gap: 50px;
-margin-left: 215px;
-padding-bottom: 32px;
-padding-top: 32px;
+    margin-left: auto;
 }
 
 .nav-link:hover {
@@ -102,7 +101,9 @@ padding-top: 32px;
 
 .hero {
     background-color: var(--footer-background);
-    height: 600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    text-align: center;
 }
 
 .hero-title {
@@ -115,10 +116,10 @@ padding-top: 32px;
     /* 136.364% */
     letter-spacing: 2.64px;
     text-transform: uppercase;
-    padding-top: 200px;
-    padding-bottom: 30px;
-    padding-left: 452px;
-    padding-right: 452px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
 
 .hero-button {
@@ -132,23 +133,18 @@ padding-top: 32px;
     line-height: 1.87;
     /* 187.5% */
     letter-spacing: 0.96px;
-    margin-left: 692px;
-    margin-right: 692px;
-    width: 216px;
-    height: 50px;
-    margin-bottom: 200px;
+    padding: 10px 32px;
 }
-
+.benefits {
+    padding-top: 94px;
+}
 .benefits-list {
     display: flex;
-    margin-top: 94px;
     gap: 30px;
-    margin-right: 215px;
-    margin-left: 215px;
-    margin-bottom: 49px;
-    align-items: center;
 }
-
+.benefits-item {
+    width: 370px;
+}
 .benefits-title {
     color: var(--text-color);
     font-family: "Roboto";
@@ -157,18 +153,23 @@ padding-top: 32px;
     line-height: 1.14;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .benefis-desk {
-    color: var(--addtext-color);
-    font-family: "Roboto";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    /* 171.429% */
-    letter-spacing: 0.42px;
+    color: var(--add-text-color);
+font-family: "Roboto";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.42px;
 }
-
+.work {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    text-align: center;
+}
 .work-title {
     color: var(--text-color);
     font-family: "Roboto";
@@ -176,21 +177,18 @@ padding-top: 32px;
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 1.08px;
-    padding-left: 617px;
-    padding-right: 617px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .work-list {
     display: flex;
-    padding-left: 215px;
-    padding-right: 215px;
     gap: 30px;
-    margin-bottom: 188px;
 }
 
 .team {
     background-color: var(--team-background);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-title {
@@ -207,21 +205,21 @@ padding-top: 32px;
 .team-list {
     display: flex;
     gap: 30px;
-    padding-left: 215px;
-    padding-right: 215px;
-
 }
 
 .team-item {
     background-color: var(--title-color);
-    margin-bottom: 94px;
 }
 
 .team-img {
     width: 270px;
-    height: 260px;
 }
-
+.team-box {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-radius: 0px 0px 4px 4px;
+background: #FFF;
+}
 .team-deskription {
     color: var(--text-color);
     text-align: center;
@@ -230,10 +228,11 @@ padding-top: 32px;
     font-weight: 500;
     line-height: 1.18;
     letter-spacing: 0.48px;
+    margin-bottom: 10px;
 }
 
 .team-desk {
-    color: var(--addtext-color);
+    color: var(--add-text-color);
     text-align: center;
     font-family: "Roboto";
     font-size: 16px;
@@ -245,8 +244,6 @@ padding-top: 32px;
 .footer {
     padding-bottom: 60px;
     padding-top: 60px;
-    padding-right: 1154px;
-    padding-left: 215px;
 }
 
 .footer-logo {
@@ -256,7 +253,6 @@ padding-top: 32px;
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
-
 }
 
 .logo-color {
@@ -267,7 +263,10 @@ padding-top: 32px;
     line-height: 1.38;
     letter-spacing: 0.78px;
 }
-
+.address {
+    margin-top: 20px;
+    font-style: normal;
+}
 .address-link {
     color: var(--title-color);
     font-family: "Roboto";
@@ -277,7 +276,12 @@ padding-top: 32px;
     /* 171.429% */
     letter-spacing: 0.42px;
 }
-
+.footer-list {
+    margin-top: 9px;
+    display: flex;
+flex-direction: column;
+gap: 9px;
+}
 .footer-link {
     color: var(--footer-humber);
     font-family: "Roboto";
@@ -286,4 +290,60 @@ padding-top: 32px;
     line-height: 1.71;
     /* 171.429% */
     letter-spacing: 0.42px;
+}
+/* PORTFOLIO====================================================================================================== */
+.portfolio {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+.button-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.button-btn {
+    color: var(--text-color);
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.62; /* 162.5% */
+letter-spacing: 0.48px;
+padding: 6px 22px;
+}
+.portfolio-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.portfolio-item {
+    border: 1px solid #EEE;
+    flex-basis: calc((100% - 60px) / 3);
+}
+.portfolio-img {
+    width: 100%;
+}
+.portfolio-title {
+    color: var(--text-color);
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 2; /* 200% */
+letter-spacing: 1.08px;
+}
+.portfolio-text {
+    color: var(--add-text-color);
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.87; /* 187.5% */
+letter-spacing: 0.48px;
+}.portfoio-box {
+    padding: 20px 24px;
+  
+background: #FFF;
 }
