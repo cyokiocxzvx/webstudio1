@@ -36,7 +36,6 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 1px solid red;
 }
 
 .header>.container {
@@ -148,66 +147,29 @@ body {
     display: flex;
     gap: 30px;
 }
-
-.benefits-item {
-    width: 370px;
-}
-
-.benefits-item:nth-child(1):before {
+.benefits-item::before {
+    content: "";
     background-color: var(--team-background);
     display: block;
     background-repeat: no-repeat;
     padding: 25px 25px 100px 100px;
     background-position: center;
-    background-image: url(../images/badge.jpg);
+    background-image: url(../images/antenna1.png);
+    background-position: center;
+    margin-bottom: 30px;
 }
 
-.benefits-item:nth-child(1):before {
-    content: "";
-    background-size: content;
-    background-image: url(../images/antenna1.png);
-    display: block;
-    margin-bottom: 30px;
-    gap: 30px;
-}
 
 .benefits-item:nth-child(2):before {
-    content: "";
-    background-size: content;
     background-image: url(../images/clock1.png);
-    display: block;
-    margin-bottom: 30px;
-    background-color: var(--team-background);
-    border-radius: 4px;
-    padding: 25px 25px 100px 100px;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .benefits-item:nth-child(3):before {
-    content: "";
-    background-size: content;
     background-image: url(../images/diagram1.png);
-    display: block;
-    margin-bottom: 30px;
-    background-color: var(--team-background);
-    border-radius: 4px;
-    background-repeat: no-repeat;
-    padding: 25px 25px 100px 100px;
-    background-position: center;
 }
 
 .benefits-item:nth-child(4):before {
-    content: "";
-    background-size: content;
     background-image: url(../images/astronaut1.png);
-    display: block;
-    margin-bottom: 30px;
-    background-color: var(--team-background);
-    border-radius: 4px;
-    background-repeat: no-repeat;
-    padding: 25px 25px 100px 100px;
-    background-position: center;
 }
 
 .benefits-title {
