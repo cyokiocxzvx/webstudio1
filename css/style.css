@@ -79,7 +79,9 @@ body {
 .nav-link:hover {
     color: var(--accent-color);
 }
-
+.nav-link:active {
+color: var(--accent-color);
+}
 .nav-link {
     color: var(--text-color);
     font-family: "Roboto";
@@ -329,11 +331,11 @@ body {
 }
 
 /* PORTFOLIO====================================================================================================== */
+
 .portfolio {
     padding-bottom: 94px;
     padding-top: 94px;
 }
-
 .button-list {
     display: flex;
     gap: 8px;
@@ -352,6 +354,7 @@ body {
     /* 162.5% */
     letter-spacing: 0.48px;
     padding: 6px 22px;
+    border: none;
 }
 
 .button-btn:hover {
@@ -370,40 +373,9 @@ body {
     flex-basis: calc((100% - 60px) / 3);
 }
 
-.portfolio-item:nth-child(1) {
-    order: -9;
-}
-
-.portfolio-item:nth-child(2) {
-    order: -8;
-}
-
-.portfolio-item:nth-child(3) {
-    order: -7;
-}
-
-.portfolio-item:nth-child(4) {
-    order: -6;
-}
-
-.portfolio-item:nth-child(5) {
-    order: -5;
-}
-
-.portfolio-item:nth-child(6) {
-    order: -4;
-}
-
-.portfolio-item:nth-child(8) {
-    order: -3;
-}
-
-.portfolio-item:nth-child(9) {
-    order: -2;
-}
-
 .portfolio-img {
     width: 100%;
+        margin-bottom: 4px;
 }
 
 .portfolio-title {
