@@ -63,7 +63,9 @@ body {
 
 }
 
-.header-nav {}
+.header-nav {
+    
+}
 
 .nav-list {
     display: flex;
@@ -109,6 +111,7 @@ color: var(--accent-color);
     padding-bottom: 200px;
     padding-top: 200px;
     text-align: center;
+    background-image: url(../images/work-team.jpg);
 }
 
 .hero-title {
@@ -130,7 +133,6 @@ color: var(--accent-color);
 .hero-button {
     border-radius: 4px;
     background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: var(--title-color);
     font-family: "Roboto";
     font-size: 16px;
@@ -139,6 +141,7 @@ color: var(--accent-color);
     /* 187.5% */
     letter-spacing: 0.96px;
     padding: 10px 32px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .benefits {
@@ -156,22 +159,22 @@ color: var(--accent-color);
     background-repeat: no-repeat;
     padding: 25px 25px 100px 100px;
     background-position: center;
-    background-image: url(../images/antenna1.png);
+    background-image: url(../images/antenna.png);
     background-position: center;
     margin-bottom: 30px;
 }
 
 
 .benefits-item:nth-child(2):before {
-    background-image: url(../images/clock1.png);
+    background-image: url(../images/clock.png);
 }
 
 .benefits-item:nth-child(3):before {
-    background-image: url(../images/diagram1.png);
+    background-image: url(../images/diagram.png);
 }
 
 .benefits-item:nth-child(4):before {
-    background-image: url(../images/astronaut1.png);
+    background-image: url(../images/astronaut.png);
 }
 
 .benefits-title {
@@ -241,6 +244,7 @@ color: var(--accent-color);
 
 .team-item {
     background-color: var(--title-color);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
 
 .team-img {
@@ -361,7 +365,9 @@ color: var(--accent-color);
     color: var(--title-color);
     background-color: var(--accent-color);
 }
-
+.button-item:first-of-type:hover {
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
 .portfolio-list {
     display: flex;
     gap: 30px;
@@ -372,7 +378,9 @@ color: var(--accent-color);
     border: 1px solid #EEE;
     flex-basis: calc((100% - 60px) / 3);
 }
-
+.portfolio-item:first-of-type:hover {
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+}
 .portfolio-img {
     width: 100%;
         margin-bottom: 4px;
