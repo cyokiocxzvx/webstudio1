@@ -38,7 +38,23 @@ body {
     padding-right: 15px;
     margin: 0 auto;
 }
-
+.logo-image {
+    fill: #757575;
+    width: 10px;
+    height: 16px;
+}
+.logo-image:hover {
+    fill: #2196F3;
+}
+.logo-img:hover {
+    fill: #2196F3;
+}
+.logo-img {
+    fill: #757575;
+    width: 16px;
+        height: 12px;
+        margin-right: 0px;
+}
 .header .container {
     display: flex;
     align-items: center;
@@ -64,13 +80,6 @@ body {
 
 }
 
-.header-list {
-
-font-size: 14px;
-}
-.header-nav {
-    
-}
 
 .nav-list {
     display: flex;
@@ -79,9 +88,9 @@ font-size: 14px;
 
 .header-list {
     display: flex;
-    gap: 50px;
     margin-left: auto;
 }
+
 .nav-link {
     color: var(--accent-color);
     font-family: "Roboto";
@@ -123,6 +132,8 @@ color: var(--accent-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+    margin-right: 50px;
+    margin-left: 10px;
 }
 
 .hero {
@@ -221,7 +232,7 @@ border: none;
     /* 171.429% */
     letter-spacing: 0.42px;
 }
-
+/* WORK */
 .work {
     padding-bottom: 94px;
     padding-top: 94px;
@@ -238,7 +249,7 @@ border: none;
     margin-bottom: 50px;
 }
 
-.work-list {
+.work-lists {
     display: flex;
     gap: 30px;
 }
@@ -248,7 +259,17 @@ border: none;
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.item {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+    margin-right: 24px;
+    margin-top: 28px;   
+}
 
+.item:first-of-type {
+    margin-left: 44px;
+}
 .team-title {
     color: var(--text-color);
     text-align: center;
