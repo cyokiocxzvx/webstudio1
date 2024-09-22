@@ -314,6 +314,9 @@ body {
 .team-linkkk {
     width: 44px;
     height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .team-linkkk:hover,
 .team-linkkk:focus {
@@ -334,7 +337,7 @@ height: 44px;
     display: flex;
 justify-content: center;
 align-items: center;
-gap: 34px;
+gap: 10px;
 }
 .team-itemw {
     background-color: var(--title-color);
@@ -391,34 +394,33 @@ gap: 34px;
 .clients-list {
     display: flex;
     align-items: center;
+    gap: 30px;
 }
 
-.clients-items {
-    width: 170px;
-    height: 92px;
-    border-radius: 4px;
-    border: 1px solid #AFB1B8;
-    padding-bottom: 16px;
-    padding-top: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-right: 30px;
-}
 
-.clients-items:last-of-type {
-    margin-right: 0;
-}
+
 
 .clients-items:hover {
-    border-radius: 4px;
-    border: 1px solid #2196F3;
 }
 
 .clients-images {
-    width: 106px;
+    width: 100px;
     height: 60px;
     fill: #AFB1B8;
 
+}
+.clients-link {
+        width: 170px;
+            height: 92px;
+            border-radius: 4px;
+            border: 1px solid #AFB1B8;
+            padding-bottom: 16px;
+            padding-top: 16px;
+            padding-left: 32px;
+            padding-right: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 }
 .clients-items:hover,
 .clients-items:focus {
@@ -428,19 +430,19 @@ gap: 34px;
 }
 .clients-link:hover,
 .clients-link:focus {
-
+border: 1px solid var(--accent-color);
     .clients-images {
         fill: var(--accent-color);
     }
 }
 .clients-images:hover,
 .clients-images:focus {
-    display: flex;
+
     fill: #2196F3;
 }
 .footer {
     padding-bottom: 60px;
-    padding-top: 60px;          
+    padding-top: 60px;       
 }
 
 .footer-logo {
@@ -453,11 +455,14 @@ gap: 34px;
 }
 .footer-box {
     display: flex;
+    flex-direction: column;
+
 }
 .footer-image {
     width: 20px;
     height: 20px;
         fill: white;
+        
 }
 
 .footer-title {
@@ -468,10 +473,7 @@ gap: 34px;
         line-height: normal;
         letter-spacing: 0.42px;
         text-transform: uppercase;
-        margin-left: 156px;
-        display: flex;
-            align-items: center;
-                justify-content: center;
+        margin-bottom: 20px;
 }
 .footer-link {
     margin-top: 9px;
