@@ -327,6 +327,9 @@ body {
 height: 44px;
     .item {
         fill: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 .team-list {
@@ -546,7 +549,9 @@ border: 1px solid var(--accent-color);
     justify-content: center;
     margin-bottom: 50px;
 }
-
+.chekede {
+    color: #2196F3;
+}
 .button-btn {
     color: var(--text-color);
     text-align: center;
