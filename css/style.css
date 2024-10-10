@@ -118,7 +118,6 @@ body {
 }
 .activee {
     color: var(--accent-color);
-    color: var(--accent-color);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
@@ -151,10 +150,15 @@ body {
     margin-top: 28px;
     position: absolute;
     opacity: 0;
+        transition: 0.3s ease;
+    transition-timing-function: ease-in-out;
+    transform: scale(0);
+    transition-duration: 500ms;
 }
 
 .nav-link:hover::after {
     opacity: 1;
+    transform: scale(1);
 }
 
 .nav-link {
@@ -196,6 +200,7 @@ body {
         transition-property: background-color color box-shadow;
     transition-timing-function: cubic-bezier(0.4,0,0.2,1);
     transition-duration: 250ms;
+    
 
 }
 
@@ -209,10 +214,14 @@ body {
     top: 76px;
     position: absolute;
     opacity: 0;
+        transition-timing-function: ease-in-out;
+    transform: scale(0);
+    transition-duration: 500ms;
 }
 
 .header-link:hover::after {
     opacity: 1;
+    transform: scale(1);
 }
 
 .hero {
@@ -936,6 +945,7 @@ body {
     border: none;
     outline: 1px solid grey;
     padding: 2px;
+
 }
 
 .icon-close {
