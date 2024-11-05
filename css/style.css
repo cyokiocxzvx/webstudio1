@@ -8,7 +8,9 @@
     --team-background: #F5F4FA;
     --footer-humber: rgba(255, 255, 255, 0.6);
 }
-
+::marker {
+    display: block;
+}
 * {
     box-sizing: border-box;
 }
