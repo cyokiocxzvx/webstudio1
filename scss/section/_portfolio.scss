@@ -1,1 +1,126 @@
-  <main>< !-- секція мейн --><section class="portfolio"><div class="container"><ul class="button-list"><li class="button-item"><button class="button-btn">Усі</button></li><li class="button-item"><button class="button-btn" type="button">Веб-сайти</button></li><li class="button-item"><button class="button-btn" type="button">Додатки</button></li><li class="button-item"><button class="button-btn" type="button">Дизайн</button></li><li class="button-item"><button class="button-btn" type="button">Маркетинг</button></li></ul><ul class="portfolio-list"><li class="portfolio-item"><div class="portfolio-img-box"><img class="portfolio-img" src="../images/laptop.jpg" alt="laptop"><div class="portfolio-overlay"><p class="portfolio-img-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div></div><div class="portfolio-box"><h2 class="portfolio-title">Технокряк</h2><p class="portfolio-text">Веб-сайт</p></div></li><li class="portfolio-item"><div class="portfolio-img-box"><img class="portfolio-img" src="../images/basketball.jpg" alt="basketball"><div class="portfolio-overlay"><p class="portfolio-img-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div></div><div class="portfolio-box"><h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2><p class="portfolio-text">Дизайн</p></div></li><li class="portfolio-item"><div class="portfolio-img-box"><img class="portfolio-img" src="../images/reustarant.jpg" alt="reustarant"><div class="portfolio-overlay"><p class="portfolio-img-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div></div><div class="portfolio-box"><h2 class="portfolio-title">Ресторан Seafood</h2><p class="portfolio-text">Додаток</p></div></li><li class="portfolio-item"><div class="portfolio-img-box"><img class="portfolio-img" src="../images/headphones.jpg" alt="headphones"><div class="portfolio-overlay"><p class="portfolio-img-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div></div><div class="portfolio-box"><h2 class="portfolio-title">Проєкт Prime</h2><p class="portfolio-text">Маркетинг</p></div></li><li class="portfolio-item"><div class="portfolio-img-box"><img class="portfolio-img" src="../images/baxes.jpg" alt="baxes"><div class="portfolio-overlay"><p class="portfolio-img-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div></div><div class="portfolio-box"><h2 class="portfolio-title">Проєкт Boxes</h2><p class="portfolio-text">Додаток</p></div></li><li class="portfolio-item"><div class="portfolio-img-box"><img class="portfolio-img" src="../images/monitor.jpg" alt="monitor"><div class="portfolio-overlay"><p class="portfolio-img-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div></div><div class="portfolio-box"><h2 class="portfolio-title">Inspiration has no Borders</h2><p class="portfolio-text">Веб-сайт</p></div></li><li class="portfolio-item"><div class="portfolio-img-box"><img class="portfolio-img" src="../images/book.jpg" alt="book"><div class="portfolio-overlay"><p class="portfolio-img-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div></div><div class="portfolio-box"><h2 class="portfolio-title">Видання Limited Edition</h2><p class="portfolio-text">Дизайн</p></div></li><li class="portfolio-item"><div class="portfolio-img-box"><img class="portfolio-img" src="../images/basketball.jpg" alt="badge"><div class="portfolio-overlay"><p class="portfolio-img-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div></div><div class="portfolio-box"><h2 class="portfolio-title">Проєкт LAB</h2><p class="portfolio-text">Маркетинг</p></div></li><li class="portfolio-item"><div class="portfolio-img-box"><img class="portfolio-img" src="../images/headphones.jpg" alt="laptopwrite"><div class="portfolio-overlay"><p class="portfolio-img-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p></div></div><div class="portfolio-box"><h2 class="portfolio-title">Growing Business</h2><p class="portfolio-text">Додаток</p></div></li></ul></div></section></main>
+.portfolio {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.button-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.button-btn {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.48px;
+  padding: 6px 22px;
+  border: none;
+  transition-property: background-color color box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.button-btn {
+  border-radius: 4px;
+}
+
+.button-btn:hover {
+  color: var(--title-color);
+  background-color: var(--accent-color);
+
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  position: relative;
+  list-style: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.portfolio-img-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: bottom 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.portfolio-item:hover .portfolio-overlay,
+.portfolio-item:focus .portfolio-overlay {
+  bottom: 0;
+}
+
+.portfolio-img-text {
+  position: absolute;
+  color: var(--title-color);
+  -webkit-text-stroke-width: 1;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 28px;
+  letter-spacing: 0.54px;
+  background: rgba(33, 149, 243, 0.164);
+  padding: 63px 63px 24px 24px;
+  bottom: 0;
+  transform: translateY(1px);
+  transition: transform 2ms, opacity 10ms;
+}
+
+.portfolio-item:hover {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-title {
+  color: var(--text-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2;
+  /* 200% */
+  letter-spacing: 1.08px;
+  margin-bottom: 4px;
+}
+
+.portfolio-text {
+  color: var(--add-text-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.87;
+  /* 187.5% */
+  letter-spacing: 0.48px;
+}
+
+.portfolio-box {
+  padding: 20px 24px;
+  background: #fff;
+}
