@@ -2,7 +2,9 @@
   background: #fff;
   padding: 24px 0 25px;
   border-bottom: 2px solid #ececec;
-
+&__img {
+  width: 20px;
+}
   &__logo,
   &__color {
     font-family: "Raleway";
@@ -16,37 +18,24 @@
     margin-right: 93px;
     color: $logo-color;
   }
+
   &__color {
     color: $accent-color;
   }
+
   &__catalog {
     display: flex;
     gap: 50px;
   }
-    &__img {
-            fill: $add-text-color;
-      width: 16px;
-      height: 12px;
-      margin-right: 10px;
 
-    }
   &__connect {
     color: $add-text-color;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
-    position: relative;
-    transition: background-color 250ms, color 250ms, box-shadow 250ms;
-
-    &:hover,
-    &:focus {
-      color: $accent-color;
-
-      &__img {
-        fill: $accent-color;
-      }
-    }
+    position: relative; 
+    transition: color 250ms ease;
 
     &::after {
       content: "";
@@ -57,20 +46,32 @@
       display: block;
       margin-top: 28px;
       position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -10px
       opacity: 0;
-      transition: opacity 0.3s ease, transform 0.5s ease-in;
       transform: scale(0);
+      transition: opacity 0.3s ease, transform 0.5s ease-in;
     }
 
-    &:hover::after {
-      opacity: 1;
-      transform: scale(1);
+    &:hover,
+    &:focus {
+      color: $accent-color;
+
+      &::after {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
   }
 
   &__list {
     display: flex;
     margin-left: auto;
+
+    &__item {
+      margin-left: 20px; 
+    }
   }
 
   &__link {
@@ -80,29 +81,38 @@
     line-height: 1.14;
     letter-spacing: 0.28px;
     margin: 0 50px 0 10px;
-    transition: background-color 250ms, color 250ms, box-shadow 250ms;
+    position: relative; 
+    transition: color 250ms ease;
 
     &::after {
-      content: "";
-      width: 161px;
-      height: 4px;
-      border-radius: 2px;
-      background: #2196f3;
-      display: block;
-      top: 76px;
-      position: absolute;
-      opacity: 0;
-      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-      transform: scale(0);
-    }
+        content: "";
+        width: 75px;
+        height: 4px;
+        border-radius: 2px;
+        background: #2196f3;
+        display: block;
+        margin-top: 28px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -10px opacity: 0;
+        transform: scale(0);
+        transition: opacity 0.3s ease, transform 0.5s ease-in;
+      }
+    
+      &:hover,
+      &:focus {
+        color: $accent-color;
+    
+        &::after {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
   }
 
   .active {
     color: $accent-color;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
 
     &::after {
       content: "";
@@ -134,5 +144,4 @@
       position: absolute;
     }
   }
-
 }
