@@ -1,126 +1,94 @@
-
 .team {
-    background-color: $team-background;
     padding-top: 94px;
     padding-bottom: 94px;
-}
-
-.item {
-    width: 20px;
-    height: 20px;
-    fill: #AFB1B8;
-        transition-property: background-color color box-shadow;
-    transition-timing-function: cubic-bezier(0.4,0,0.2,1);
-    transition-duration: 250ms;
-}
-
-
-.item:hover {
-    fill: white;
-}
-
-.team-title {
-    color: $text-color;
     text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.16;
-    letter-spacing: 1.08px;
-    margin-bottom: 50px;
-}
+    background-color: $team-background;
 
-.team-linkkk {
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-@keyframes rotateAndScale {
-    0% {
-        transform: rotate(0deg);
+    &__title {
+        color: $text-color;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.16;
+        letter-spacing: 1.08px;
+        margin-bottom: 50px;
     }
-    100% {
-        transform: rotate(360deg);
-    }
-}
 
-.team-linkkk:hover,
-.team-linkkk:focus {
-    background-color: #2196F3;
-    padding: 12px;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-animation: rotateAndScale 0.6s ease-out;
-    .item {
-        fill: white;
+    &__list {
         display: flex;
-        align-items: center;
+        gap: 30px;
+    }
+
+    &__item {
+        flex-basis: calc((100% - 90px) / 4);
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__wrap {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__name {
+        color: $text-color;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.18;
+        letter-spacing: 0.48px;
+        margin-bottom: 10px;
+    }
+
+    &__taxt {
+        color: $add-text-color;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.18;
+        letter-spacing: 0.48px;
+        margin-bottom: 16px;
+    }
+
+    &__items {
+        display: flex;
         justify-content: center;
+        gap: 10px;
     }
-}
 
-.team-list {
-    display: flex;
-    gap: 30px;
-}
+    &__link {
+        padding: 12px 12px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-.team-lists {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
+        &:hover,
+        &:focus {
+            border: none;
+            background-color: $accent-color;
+            outline: 0px solid $accent-color;
 
-.team-itemw {
-    background-color: $title-color;
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
-}
-@keyframes scaleUp {
-    0% {
-        transform: scale(1);
+            .team__icon {
+                fill: $title-color;
+            }
+        }
     }
-    100% {
-        transform: scale(1.05);
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: #afb1b8;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-}
-
-.team-item:hover  {
-   
-    .team-img {
- animation: scaleUp 0.3s ease-in-out forwards;
-    }
-}
-
-.team-img {
-    width: 270px;
-}
-
-.team-box {
-    padding-bottom: 30px;
-    padding-top: 30px;
-    border-radius: 0px 0px 4px 4px;
-    background: #FFF;
-}
-
-.team-deskription {
-    color: var(--text-color);
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.18;
-    letter-spacing: 0.48px;
-    margin-bottom: 10px;
-}
-
-.team-desk {
-    color: $add-text-color;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.18;
-    letter-spacing: 0.48px;
-    margin-bottom: 28px;
 }

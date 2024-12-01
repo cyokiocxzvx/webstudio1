@@ -1,60 +1,47 @@
 .work {
-  padding: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
   text-align: center;
 
   &__title {
-    color: #333;
-
+    color: $text-color;
+    text-align: center;
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 1px;
+    line-height: 1.16;
+    letter-spacing: 1.08px;
     margin-bottom: 50px;
   }
 
-  &__lists {
-    display: flex;
-    justify-content: center;
-
-    gap: 30px;
-
-    flex-wrap: wrap;
-  }
-
   &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
     position: relative;
-    width: 370px;
-
-    overflow: hidden;
-
-    text-align: center;
   }
 
-  &__img {
-    width: 100%;
 
-    transition: transform 0.3s ease-in-out;
-  }
 
-  &__list:hover .work__img {
-    transform: scale(1.1);
-  }
-
-  &__text {
-    width: 100%;
-    height: 70px;
+  &__wrap {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
     position: absolute;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+  }
 
-    color: #fff;
+  &__deck {
+    color: $title-color;
+    text-align: center;
     font-size: 14px;
     font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 0.5px;
   }
+
 }

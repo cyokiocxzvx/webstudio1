@@ -1,10 +1,43 @@
-.benefits {
+.advant {
   padding-top: 94px;
 
   &__list {
     display: flex;
     gap: 30px;
   }
+
+  &__item {
+
+
+    &::before {
+      content: "";
+      margin-bottom: 30px;
+      display: block;
+      width: 270px;
+      height: 120px;
+      border-radius: 4px;
+      background-color: $team-background;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &:first-child::before {
+      background-image: url(../img/antenna.png);
+    }
+
+    &:nth-child(2)::before {
+      background-image: url(../img/clock.png);
+    }
+
+    &:nth-child(3)::before {
+      background-image: url(../img/diagram.png);
+    }
+
+    &:last-child::before {
+      background-image: url(../img/astronaut.png);
+    }
+  }
+
   &__title {
     color: $text-color;
     font-size: 14px;
@@ -14,42 +47,12 @@
     text-transform: uppercase;
     margin-bottom: 10px;
   }
-  &__desk {
+
+  &__text {
     color: $add-text-color;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 24px;
-    /* 171.429% */
-    letter-spacing: 0.42px;
-  }
-  &__item {
-    &::before {
-      content: "";
-      background-color: $team-background;
-      display: block;
-      background-repeat: no-repeat;
-      background-position: center;
-      padding: 25px 25px 100px 100px;
-      margin-bottom: 30px;
-    }
-
-    &:nth-child(1) {
-      &::before {
-        background-image: url(/img/mixail.jpg);
-      }
-    }
-
-    &:nth-child(2)::before {
-      background-image: url(/img/clock.png);
-    }
-
-    &:nth-child(3)::before {
-      background-image: url(../images/diagram.png);
-    }
-
-    &:nth-child(4)::before {
-      background-image: url(../images/astronaut.png);
-    }
+    line-height: 1.71;
+    letter-spacing: 0.4px;
   }
 }
