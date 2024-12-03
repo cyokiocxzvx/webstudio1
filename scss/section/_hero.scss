@@ -1,86 +1,28 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-    url(../img/work.jpg);
+  padding: 200px 0;
+  @include background-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   overflow: hidden;
 
-
   &__title {
     color: $title-color;
-    text-align: center;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-      opacity: 0;
-        animation: auraPulse 3s ease-out forwards;
-
+    margin: 0 auto 30px;
+    @include text-style(44px, 1.36, 2.64px, 900);
+    @extend %fade-in;
+    animation: auraPulse 3s ease-out forwards;
   }
-@keyframes auraPulse {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-
-  50% {
-    opacity: 0.7;
-    transform: scale(1.2);
-  }
-
-  90% {
-    opacity: 0;
-    transform: scale(1.5);
-  }
-  100% {
-    opacity: 1;
-    transform: rotate(360deg);
-  }
-}
-
- 
-
 
   &__btn {
     color: $title-color;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.96px;
+    @include text-style(16px, 1.87, 0.96px, 700);
     background-color: $accent-color;
     padding: 10px 32px;
-    border: none;
     border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  opacity: 0;
+    @include box-shadow(0px, 4px, 4px, 0px, rgba(0, 0, 0, 0.15));
     transform: scale(0.5) rotate(-90deg);
     animation: fancyFadeIn 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
   }
-    @keyframes fancyFadeIn {
-      0% {
-        opacity: 0;
-        transform: scale(0.5) rotate(-90deg);
-      }
-  
-      50% {
-        opacity: 0.5;
-        transform: scale(1.2) rotate(0deg);
-      }
-  
-      100% {
-        opacity: 1;
-        transform: scale(1) rotate(0deg);
-      }
-    }
 }

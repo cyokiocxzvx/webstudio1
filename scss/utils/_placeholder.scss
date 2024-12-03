@@ -1,0 +1,37 @@
+
+%flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%transition-basic {
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+%text-uppercase-bold {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+%fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
