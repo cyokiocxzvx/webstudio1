@@ -1,27 +1,28 @@
+// mixins.scss
 
-@mixin flex-center($direction: row, $gap: 0) {
-    display: flex;
+@mixin flex-center($direction: row, $gap: 0 ) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
     flex-direction: $direction;
-    gap: $gap;
-    align-items: center;
-    justify-content: center;
+        gap: $gap;
 }
 
 @mixin text-style($size, $line-height, $letter-spacing: 0, $font-weight: 400) {
-    font-size: $size;
-    line-height: $line-height;
-    letter-spacing: $letter-spacing;
-    font-weight: $font-weight;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  font-weight: $font-weight;
 }
 
 @mixin transition($properties, $duration: 250ms, $timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
-    transition: $properties $duration $timing-function;
+  transition: $properties $duration $timing-function;
 }
 
 @mixin background-gradient($start-color, $end-color) {
-    background-image: linear-gradient($start-color, $end-color);
+  background-image: linear-gradient($start-color, $end-color);
 }
 
 @mixin box-shadow($x, $y, $blur, $spread, $color) {
-    box-shadow: $x $y $blur $spread $color;
+  box-shadow: $x $y $blur $spread $color;
 }

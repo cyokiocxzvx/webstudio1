@@ -1,7 +1,12 @@
 .work {
   padding-top: 94px;
   padding-bottom: 94px;
+  display: none;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    
+  }
 
   &__title {
     color: $text-color;
