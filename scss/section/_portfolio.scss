@@ -1,6 +1,11 @@
 .card {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
 
 
@@ -11,11 +16,25 @@
   }
 
   &__item {
-    flex-basis: calc((100% - 60px) / 3);
+    flex-basis: 100%;
     border: 1px solid #eeeeee;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+
+    @media screen and (min-width: 1200px) {
+
+      flex-basis: calc((100% - 60px) / 3);
+    }
+
+
+
 
     &:hover {
       box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
@@ -83,8 +102,19 @@
 .button__list {
   display: flex;
   gap: 8px;
-  justify-content: center;
-  margin-bottom: 50px;
+  row-gap: 15px;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .button__btn {
