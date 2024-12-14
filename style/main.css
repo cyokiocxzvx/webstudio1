@@ -350,12 +350,10 @@ body {
   opacity: 1;
   background-color: white;
 }
-
-.is-hidden {
+.menu .is-hidden {
   opacity: 0;
   pointer-events: none;
 }
-
 .menu__btn {
   border: none;
   background-color: transparent;
@@ -363,23 +361,19 @@ body {
   top: 10px;
   right: 15px;
 }
-
 .menu__close {
   width: 40px;
   height: 40px;
   fill: #212121;
 }
-
-.menu__btn:hover .menu__close {
+.menu__btn:hover__close {
   fill: #2196F3;
 }
-
 .menu__list {
   display: flex;
   flex-direction: column;
   gap: 35px;
 }
-
 .menu__link {
   color: #212121;
   font-size: 40px;
@@ -387,11 +381,9 @@ body {
   letter-spacing: 0.8px;
   line-height: 1.17;
 }
-
 .menu__link:hover {
   color: #2196F3;
 }
-
 .menu__list-contact {
   display: flex;
   flex-direction: column;
@@ -399,7 +391,6 @@ body {
   margin-top: 306px;
   margin-bottom: 64px;
 }
-
 .menu__link-contact {
   color: #757575;
   font-size: 24px;
@@ -407,19 +398,16 @@ body {
   line-height: 1.08;
   letter-spacing: 0.48px;
 }
-
 .menu__item-contact:first-child > .menu__link-contact {
   color: #2196F3;
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.68px;
 }
-
 .menu__list-social {
   display: flex;
   flex-wrap: wrap;
 }
-
 .menu__item-social:not(:last-child) {
   margin-right: 10px;
   display: flex;
@@ -432,7 +420,6 @@ body {
   background: rgba(33, 33, 33, 0.2);
   margin-left: 10px;
 }
-
 .menu__link-social {
   color: #2196F3;
   font-size: 18px;
