@@ -22,11 +22,11 @@
     <header class="header">
         <div class="container">
             <a href="./index.html" class="header__logo"><span class="header__color">Web</span>Studio</a>
-                <button type="button" class="header__button" data-modal-header-open>
-                    <svg class="header__menu">
-                        <use href="../img/symbol-defs.svg#icon-burger"></use>
-                    </svg>
-                </button>
+            <button type="button" class="header__button" data-modal-header-open>
+                <svg class="header__menu">
+                    <use href="../img/symbol-defs.svg#icon-burger"></use>
+                </svg>
+            </button>
 
             <ul class="header__catalog">
                 <li class="header__thing">
@@ -37,7 +37,7 @@
                 </li>
                 <li class="header__thing"><a href="#" class="header__connect">Контакти</a></li>
             </ul>
-    
+
             <ul class="header__list">
                 <li class="header__item">
                     <a href="mailto:info@devstudio.com" class="header__link"><svg class="header__icon">
@@ -91,7 +91,19 @@
                 <ul class="card__list">
                     <li class="card__item">
                         <div class="card__box">
-                            <img src="../img/texno.jpg" alt="texno" class="card__img">
+                            <picture>
+                                <source
+                                    srcset="../img/desktop/imgtechno-desktop@1x.webp 1x, ../img/desktop/imgtechno-desktop@2x.webp 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="../img/tablet/imgtechno-tablet@1x.webp 1x, ../img/tablet/imgtechno-tablet@2x.webp 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="../img/mobile/imgtechno-mobile@1x.webp 1x, ../img/mobile/imgtechno-mobile@2x.webp 2x"
+                                    media="(max-width:767px)">
+
+                                <img src="../img/texno.jpg" alt="texno" class="card__img">
+                            </picture>
                             <p class="card__desk">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                 сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                 приватну особу.</p>
@@ -103,7 +115,19 @@
                     </li>
                     <li class="card__item">
                         <div class="card__box">
-                            <img src="../img/star.jpg" alt="star" class="card__img">
+                            <picture>
+                                <source
+                                    srcset="../img/desktop/imgbasket-desktop@1x.webp 1x, ../img/desktop/imgbasket-desktop@2x.webp 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="../img/tablet/imgbasket-tablet@1x.webp 1x, ../img/tablet/imgbasket-tablet@2x.webp 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="../img/mobile/imgbasket-mobile@1x.webp 1x, ../img/mobile/imgbasket-mobile@2x.webp 2x"
+                                    media="(max-width:767px)">
+
+                                <img src="../img/star.jpg" alt="star" class="card__img">
+                            </picture>
                             <p class="card__desk">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                 сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                 приватну особу.</p>
@@ -115,7 +139,19 @@
                     </li>
                     <li class="card__item">
                         <div class="card__box">
-                            <img src="../img/seafood.jpg" alt="seafood" class="card__img">
+                            <picture>
+                                <source
+                                    srcset="../img/desktop/imgreustaurant-desktop@1x.webp 1x, ../img/desktop/imgreustaurant-desktop@2x.webp 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="../img/tablet/imgrestaurant-tablet@1x.webp 1x, ../img/tablet/imgrestaurant-tablet@2x.webp 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="../img/mobile/imgrestaurant-mobile@1x.webp 1x, ../img/mobile/imgrestaurant-mobile@2x.webp 2x"
+                                    media="(max-width: 767px)">
+
+                                <img src="../img/seafood.jpg" alt="seafood" class="card__img">
+                            </picture>
                             <p class="card__desk">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                 сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                 приватну особу.</p>
@@ -127,7 +163,20 @@
                     </li>
                     <li class="card__item">
                         <div class="card__box">
-                            <img src="../img/prime.jpg" alt="prime" class="card__img">
+                            <picture>
+                                <source
+                                    srcset="../img/desktop/imgheadphones-desktop@1x.webp 1x, ../img/desktop/imgheadphones-desktop@2x.webp 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="../img/tablet/imgheadphones-tablet@1x.webp 1x, ../img/tablet/imgheadphones-tablet@2x.webp 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    src="../img/mobile/imgheadphones-mobile@1x.webp 1x, ../img/mobile/imgheadphones-mobile@2x.webp 2x"
+                                    media="(max-width: 767px)">
+
+
+                                <img src="../img/prime.jpg" alt="prime" class="card__img">
+                            </picture>
                             <p class="card__desk">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                 сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                 приватну особу.</p>
@@ -139,7 +188,20 @@
                     </li>
                     <li class="card__item">
                         <div class="card__box">
-                            <img src="../img/boxes.jpg" alt="boxes" class="card__img">
+                            <picture>
+                                <source
+                                    srcset="../img/desktop/imgboxes-desktop@1x.webp 1x, ./img/desktop/imgboxes-desktop@2x.webp 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="../img/tablet/imgboxes-tablet@1x.webp 1x, ../img/tablet/imgboxes-tablet@2x.webp 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="../img/mobile/imgboxes-mobile@1x.webp 1x, ./img/mobile/imgboxes-mobile@2x.webp 2x"
+                                    media="(max-width: 767px)">
+
+
+                                <img src="../img/boxes.jpg" alt="boxes" class="card__img">
+                            </picture>
                             <p class="card__desk">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                 сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                 приватну особу.</p>
@@ -151,7 +213,19 @@
                     </li>
                     <li class="card__item">
                         <div class="card__box">
-                            <img src="../img/borders.jpg" alt="borders" class="card__img">
+                            <picture>
+                                <source
+                                    srcset="../img/desktop/imgmonitor-desktop@1x.webp 1x, ../img/desktop/imgmonitor-desktop@2x.webp 2x"
+                                    media="min-width: 1200px">
+                                <source
+                                    srcset="../img/tablet/imgmonitor-tablet@1x.webp 1x, ../img/tablet/imgmonitor-tablet@2x.webp 2x"
+                                    media="min-width: 768px">
+                                <source
+                                    srcset="../img/mobile/imgmonitor-mobile@1x.webp 1x, ../img/mobile/imgmonitor-mobile@2x.webp 2x"
+                                    media="(max-width: 767px)">
+
+                                <img src="../img/borders.jpg" alt="borders" class="card__img">
+                            </picture>
                             <p class="card__desk">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                 сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                 приватну особу.</p>
@@ -163,7 +237,19 @@
                     </li>
                     <li class="card__item">
                         <div class="card__box">
-                            <img src="../img/edition.jpg" alt="edstion" class="card__img">
+                            <picture>
+                                <source
+                                    srcset="../img/desktop/imgcomics-desktop@1x.webp 1x, ../img/desktop/imgcomics-desktop@2x.webp 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="../img/tablet/imgcomics-tablet@1x.webp 1x, ../img/tablet/imgcomics-tablet@2x.webp 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="../img/mobile/imgtechno-mobile@1x.webp 1x, ../img/mobile/imgtechno-mobile@2x.webp 2x"
+                                    media=" (max-width: 767px)">
+
+                                <img src="../img/edition.jpg" alt="edstion" class="card__img">
+                            </picture>
                             <p class="card__desk">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                 сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                 приватну особу.</p>
@@ -175,7 +261,20 @@
                     </li>
                     <li class="card__item">
                         <div class="card__box">
+                            <picture>
+                                <source
+                                    srcset="../img/desktop/imglab-desktop@1x.webp 1x, ../img/desktop/imglab-desktop@2x.webp 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="../img/tablet/imglab-tablet@1x.webp 1x, ../img/tablet/imglab-tablet@2x.webp 2x"
+                                    media="(min-width: 768px)">
+                                <source
+                                    srcset="../img/mobile/imglab-mobile@1x.webp 1x, ../img/mobile/imglab-mobile@2x.webp 2x"
+                                    media="(max-width:767px)">
+
+                        
                             <img src="../img/lab.jpg" alt="lab" class="card__img">
+                                </picture>
                             <p class="card__desk">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                 сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                 приватну особу.</p>
@@ -187,7 +286,13 @@
                     </li>
                     <li class="card__item">
                         <div class="card__box">
+                            <picture>
+                                <source srcset="../img/desktop/imgbusiness-desktop@1x.webp 1x, ../img/desktop/imgbusiness-desktop@2x.webp 2x" media="(min-width:1200px)">
+                                <source srcset="../img/tablet/imgbusness-tablet@1x.webp 1x, ../img/tablet/imgbusness-tablet@2x.webp 2x" media="(min-width: 768px)">
+                                <source srcset="../img/mobile/imgbusiness-mobile@1x.webp 1x, ../img/mobile/imgbusiness-mobile@2x.webp 2x" media="(max-width: 767px)">
+                 
                             <img src="../img/busines.jpg" alt="busines" class="card__img">
+                                    </picture>
                             <p class="card__desk">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                                 сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                                 приватну особу.</p>

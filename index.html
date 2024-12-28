@@ -126,19 +126,30 @@
                 <h2 class="work__title">Чим ми займаємося</h2>
                 <ul class="work__list">
                     <li class="work__item">
-                        <img src="./img/desctop.jpg" alt="comp" class="work-images" />
+                        <picture>
+                            <source srcset="./img/desktop/comp@1x.jpg 1x, ./img/desktop/comp@2x.jpg 2x" media="(min-width: 1200px)">
+
+                            <img src="./img/comp.jpg" alt="comp" class="work-images" />
+                        </picture>
                         <div class="work__wrap">
                             <h3 class="work__deck">Десктопні додатки</h3>
                         </div>
                     </li>
                     <li class="work__item">
-                        <img src="./img/tel.jpg" alt="tel" class="work__images" />
+                        <picture>
+                            <source srcset="./img/desktop/tel-desk@1x.jpg 1x, /img/desktop/tel-desk@2x.jpg 2x" media="(min-width: 1200px)">
+
+                            <img src="./img/tel.jpg" alt="tel" class="work__images" />
+                        </picture>
                         <div class="work__wrap">
                             <h3 class="work__deck">Мобільні додатки</h3>
                         </div>
                     </li>
                     <li class="work__item">
-                        <img src="./img/planchtablet.jpg" alt="tablet" class="work__images" />
+                        <picture>
+                            <source srcset="./img/desktop/tablet-desk@1x .jpg 1x, ./img/desktop/tablet-desk@2x.jpg 2x" media="(min-width: 1200px)">
+                        
+                        <img src="./img/planchtablet.jpg" alt="tablet" class="work__images" /></picture>
                         <div class="work__wrap">
                             <h3 class="work__deck">Дизайнерські рішення</h3>
                         </div>
@@ -151,7 +162,16 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img src="./img/igor.jpg" alt="igor" class="team__img" />
+                        <picture>
+                            <source
+                                srcset="./img/desktop/igor-desktop@1x.webp 1x, ./img/desktop/igor-desktop@2x.webp 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./img/tablet/igor-tablet@1x.webp 1x, ./img/tablet/igor-tablet@2x.webp 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./img/mobile/igor-mobile@1x.webp 1x, ./img/mobile/igor-mobile@2x.webp 2x"
+                                media="(max-width: 767px)">
+                            <img src="./img/igor.jpg" alt="igor" class="team__img" />
+                        </picture>
                         <div class="team__wrap">
                             <h3 class="team__name">Ігор Дем'яненко</h3>
                             <p class="team__taxt">Product Designer</p>
@@ -188,7 +208,16 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./img/olga.jpg" alt="olga" class="team__img" />
+                        <picture>
+
+                            <source src="./img/desktop/olga-desktop@1x.webp 1x, ./img/desktop/olga-desktop@2x.webp 2x "
+                                media="(min-width:1200px)">
+                            <source srcset="./img/tablet/olga-tablet@1x.webp 1x, ./img/tablet/olga-tablet@2x.webp 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./img/mobile/olga-mobile@1x.webp 1x, ./img/mobile/olga-mobile@2x.webp 2x"
+                                media="(max-width:767px)">
+                            <img src="./img/olga.jpg" alt="olga" class="team__img" />
+                        </picture>
                         <div class="team__wrap">
                             <h3 class="team__name">Ольга Рєпіна</h3>
                             <p class="team__taxt">Frontend Developer</p>
@@ -225,7 +254,17 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./img/mykola.jpg" alt="mykola" class="team__img" />
+                        <picture>
+                            <source
+                                srcset="./img/desktop/mykola-desktop@1x.webp 1x, ./img/desktop/mykola-desktop@2x.webp 2x"
+                                media="(min-width:1200px)">
+                            <source
+                                srcset="./img/tablet/mykola-tablet@1x.webp 1x, ./img/tablet/mykola-tablet@2x.webp 2x"
+                                media="(min-width:768px)">
+
+
+                            <img src="./img/mykola.jpg" alt="mykola" class="team__img" />
+                        </picture>
                         <div class="team__wrap">
                             <h3 class="team__name">Микола Тарасов</h3>
                             <p class="team__taxt">Marketing</p>
@@ -262,7 +301,19 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./img/mixail.jpg" alt="mixail" class="team__img" />
+                        <picture>
+                            <source
+                                srcset="./img/desktop/mixail-desktop@1x.webp 1x, ./img/desktop/mixail-desktop@2x.webp 2x"
+                                media="(min-width:1200px)">
+                            <source
+                                srcset="./img/tablet/mixail-tablet@1x.webp 1x, ./img/tablet/mixail-tablet@2x.webp 2x"
+                                media="(min-width: 768px)">
+                            <source
+                                srcset="./img/mobile/mixail-mobile@1x.webp 1x, ./img/mobile/mixail-mobile@2x.webp 2x"
+                                media="(max-width:767px)">
+
+                            <img src="./img/mixail.jpg" alt="mixail" class="team__img" />
+                        </picture>
                         <div class="team__wrap">
                             <h3 class="team__name">Михайло Єрмаков</h3>
                             <p class="team__taxt">UI Designer</p>
