@@ -1,21 +1,61 @@
 .hero {
-  background-color: $footer-background;
+  padding-top: 118px;
   padding-bottom: 118px;
-  padding-top: 118px; 
-  text-align: center;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(/img/work.jpg);
-  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+
+    url(../img/mobile/hero-mobile@1x.webp);
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), url(../img/mobile/hero-mobile@2x.webp);
+  }
+
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
+  overflow: hidden;
+
+
+  @media screen and (min-width:768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+
+      url(../img/tablet/hero-tablet@1x.webp);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)), url(../img/tablet/hero-tablet@2x.webp);
+    }
+  }
+
+
+
+
+
+
+
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
-  }
 
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+
+      url(../img/desktop/hero-desktop@1x.webp);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)), url(../img/desktop/hero-desktop@2x.webp);
+    }
+  }
   @keyframes movement {
     0% {
       opacity: 0;
@@ -42,15 +82,16 @@
     margin-right: auto;
     margin-bottom: 30px;
     animation: movement 1s ease-out;
-    
+
     @media screen and (min-width: 480px) {
       width: 360px;
     }
+
     @media screen and (min-width: 1200px) {
       font-size: 44px;
       line-height: 1.36;
       letter-spacing: 2.64px;
-          width: 696px;
+      width: 696px;
     }
   }
 
@@ -79,9 +120,9 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
     animation: movement 3s ease, pulsation 0.6s ease-in-out infinite;
+
     @media screen and (min-width: 1200px) {
-          padding: 10px 32px;
-      
+      padding: 10px 32px;
     }
   }
 }
