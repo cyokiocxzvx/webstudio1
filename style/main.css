@@ -1,3 +1,4 @@
+@charset "UTF-8";
 a {
   -webkit-text-decoration: 0;
           text-decoration: 0;
@@ -227,6 +228,10 @@ body {
 .header__item:hover::after {
   opacity: 1;
   transform: scale(1);
+}
+.header__item:nth-child(1) .header__icon {
+  width: 16px;
+  height: 16px;
 }
 .header__item:nth-child(2) .header__icon {
   width: 10px;
@@ -655,6 +660,12 @@ body {
 .work__item {
   position: relative;
 }
+.work .work__images {
+  width: 100%;
+  /* или установите конкретное значение, например, 300px */
+  height: auto;
+  /* сохраняет пропорции изображения */
+}
 .work__wrap {
   padding-top: 27px;
   padding-bottom: 27px;
@@ -736,6 +747,7 @@ body {
 @media screen and (min-width: 1200px) {
   .team__img {
     width: 270px;
+    height: 260px;
   }
 }
 .team__wrap {
