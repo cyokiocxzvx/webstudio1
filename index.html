@@ -266,7 +266,9 @@
                             <source
                                 srcset="./img/tablet/mykola-tablet@1x.webp 1x, ./img/tablet/mykola-tablet@2x.webp 2x"
                                 media="(min-width:768px)">
-
+                            <source
+                                srcset="./img/mobile/imgmykyla-mobile@1x.webp 1x, ./img/mobile/imgmykyla-mobile@2x.webp 2x"
+                                media="(max-width: 767px)">
 
                             <img src="./img/mykola.jpg" alt="mykola" class="team__img" />
                         </picture>
@@ -390,7 +392,7 @@
                         </a>
                     </li>
                     <li class="client__item">
-                        <a href="" class="client__link"> i
+                        <a href="" class="client__link">
                             <svg class="client__icon">
                                 <use href="./img/symbol-defs.svg#logo"></use>
                             </svg>
@@ -407,7 +409,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer"> 
         <div class="container">
             <div class="footer__wrapper">
                 <a href="./index.html" class="footer__logo"><span class="footer__color">Web</span>Studio</a>
@@ -462,10 +464,12 @@
                 <form class="footer__form">
                     <input type="email" placeholder="E-mail" class="footer__input" />
                     <button type="submit" class="footer__btn">
+                        
                         Підписатися
-                        <svg class="footer__plane">
-                            <use href="./img/symbol-defs.svg#close"></use>
                         </svg>
+                        <svg class="footer__plane">
+                            <use href="./img/symbol-defs.svg#icon-send"></use>
+                                </svg>
                     </button>
                 </form>
             </div>
@@ -516,7 +520,7 @@
                 <button type="submit" class="modal__btn">Відправити</button>
                 <button type="button" class="btn__close" data-modal-close>
                     <svg class="form__close">
-                        <use href="./img/symbol-defs.svg#close"></use>
+                        <use href="./img/symbol-defs.svg#icon-send"></use>
                     </svg>
                 </button>
             </form>
